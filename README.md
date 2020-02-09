@@ -2,6 +2,9 @@
 
 ### This project has two applications:  Server part and client part, together they renders the Mandelbort set image.  
 1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
+The server accpts a request that hass this form:  
+** _min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n_**
+
 2.  Client application divides the Mandelbrot image generation requests and spreads the workload over a set of severs.
 
 # Getting Started
@@ -9,14 +12,18 @@
 ### Prerequisites
 java runtime environment.
 
-###  Setup & Installation
+### Setup & Installation
 All *.class files should be placed in the same directory.
 
-Put all server side files in the a folder on the server side. Compile all files with "javac *.java" command and run the main program by executing "Java MandelbrotServer".  Note that the TCPIP port number is fixed as "5056".  However, it can be changed.  Just recompile the java file before running MandelbrotServer.
+Put all server side files in the a folder on the server side. Compile all files with "javac *.java" command.  Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the MandelbrotServer main functiopn and recompile the files.
 
-### &nbsp;&nbsp;&nbsp; Execution 
+Put all client side files int a folder on the client side.  Compile all files with "javac *.java" command and ions list-of servers.**
 
-Put all client side files int a folder on the client side.  Compile all files with "javac *.java" command and run the main program by executing the ClientMain in the form like this: **ClientMain mi_c_re min_c_im max_c_re max_c_im max_n x y divisions list-of servers.**
+### Execution 
+
+Server side:  run the main program by excuting the command "Java MandelbrotServer" in the  *.class file folder.
+
+Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this: **ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division.**
 
 E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456
 
