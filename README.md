@@ -2,8 +2,11 @@
 
 ### This project has two applications:  Server part and client part, together they renders the Mandelbort set image.  
 1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
-The server accpts a request that hass this form:  
+The server accepts a request that hass this form:  
 _**min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n**_
+In return, it returns a gray-scale image of dimesion x times y, where each pxel corresponds to the number of iterations it takes, until |Z<sub>n<sub>| > C, Z<sub>n+1<sub> = Z<sub>n<sub><sup>2<sup> + c, (C is a complex), with the pixel value is modulo 256, and a maximum of inf_n iterations is performed.  c is varied over the image between the boundaries given.  The format of the image is in jpg format.
+
+The server is capable of handleing multiple call.  It is psssible to speicfy which port the server listens to.
 
 2.  Client application divides the Mandelbrot image generation requests and spreads the workload over a set of severs.
 
