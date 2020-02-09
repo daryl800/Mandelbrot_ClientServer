@@ -23,9 +23,9 @@ Put all client side files int a folder on the client side.  Compile all files wi
 
 Server side:  run the main program by excuting the command "Java MandelbrotServer" in the  *.class file folder.
 
-Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this: **ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division.**
+Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this:  _**ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division.**_
 
-E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456
+  _**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
 
 This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output image client will be displayed on client screen and a copy of the image file "FullMandelbrotImage.jpg" will be stored in the client side folder.
 
