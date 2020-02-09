@@ -29,12 +29,3 @@ ToDoList is for free and provide its entire source code for free as well. In the
 
 However, please do not ship this app under your own account. Paid or free.
 
-# Why do I build this App?
-It is an SDA5 Individual Project, no choice!!!
-Nevertheless, I have learned many things from here.
-
-# Contributions
-Myself as the auther.  The teachers and TA(s) @ KTH.  
-
-# Acknowledgements
-BIG thanks to the KTH teachers and TA(s) and the Novare Potential team.
