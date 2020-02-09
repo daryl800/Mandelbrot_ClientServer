@@ -45,6 +45,6 @@ Mandelbrot_ClientServer is for free and provide its entire source code for free 
 However, please do not ship this app under your own account!!!
 
 ### Reference
-(1) Mandelbrot_ClientServer Class diagrams.pdf
-(2) Mandelbrot_ClientServer workflow and architecture.pdf
+1. Mandelbrot_ClientServer Class diagrams.pdf
+2. Mandelbrot_ClientServer workflow and architecture.pdf
 
