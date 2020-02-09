@@ -4,11 +4,11 @@
 1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
 The server accepts a request that has this form:  
 
-  - _**min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n**_
+    - _**min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n**_
 
-  - In return, it returns a gray-scale image of dimesion x times y, where each pxel corresponds to the number of iterations it takes, until |Z<sub>n</sub>| > C, Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + C (C is a complex), with the pixel value is modulo 256, and a maximum of inf_n iterations is performed.  C is varied over the image between the boundaries given.  The format of the image is in jpg format.
+    - In return, it returns a gray-scale image of dimesion x times y, where each pxel corresponds to the number of iterations it takes, until |Z<sub>n</sub>| > C, Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + C (C is a complex), with the pixel value is modulo 256, and a maximum of inf_n iterations is performed.  C is varied over the image between the boundaries given.  The format of the image is in jpg format.
 
-  - The server is capable of handleing multiple call.  And it is psssible to speicfy which port the server listens to.
+    - The server is capable of handleing multiple call.  And it is psssible to speicfy which port the server listens to.
 
 2.  Client application divides the task into multiple requests and spreads the workload over a set of severs.  Afterwards, it merges the sub-pictures returned from the servers, shows it on screen and saves the image in jpg format into a local folder.  
 
@@ -30,7 +30,7 @@ Server side:  run the main program by excuting the command "Java MandelbrotServe
 
 Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this:  _**ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division.**_
 
--_**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
+  - _**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
 
 This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output image client will be displayed on client screen and a copy of the image file "FullMandelbrotImage.jpg" will be stored in the client side folder.
 
