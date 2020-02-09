@@ -1,20 +1,20 @@
 # Mandelbrot_ClientServer
 
-### This project has two applications:  Server part and client part, which together renders parts of the Mandelbort set.  
-1.  Server application accepts requests on a TCP port.
-2.  Client application spreads the workload over a set of severs.
+### This project has two applications:  Server part and client part, together they renders the Mandelbort set image.  
+1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
+2.  Client application divides the Mandelbrot image generation requests and spreads the workload over a set of severs.
 
 # Getting Started
 
-### &nbsp;&nbsp;&nbsp; Prerequisites
+### Prerequisites
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java runtime environment.
 
-### &nbsp;&nbsp;&nbsp; Setup & Installation
+###  Setup & Installation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All *.class files should be placed in the same directory.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Put all sever side files in the same folder on the server side. Compile all files with "javac *.java" and execute the main program by executing "Java MandelbrotServer"
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull all client side files int eh same folder on the client side.  Compile all files with "javac I.java" and execute the main program by executing the ClientMain in the form like: mi_c_re min_c_im max_c_re max_c_im max_n x y divisions list-of servers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Put all client side files int eh same folder on the client side.  Compile all files with "javac I.java" and execute the main program by executing the ClientMain in the form like: mi_c_re min_c_im max_c_re max_c_im max_n x y divisions list-of servers
 
 Example:  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:1234 localhost:1234 localhost:3456
 
