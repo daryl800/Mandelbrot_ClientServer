@@ -4,7 +4,7 @@
 1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
 The server accepts a request that has this form:  
 
-    - _**min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n**_
+    - _**min_c_re, min_c_im, max_c_re, max_c_im, max_n, x, y, inf_n**_
 
     - In return, it returns a gray-scale image of dimesion x times y, where each pxel corresponds to the number of iterations it takes, until |Z<sub>n</sub>| > C, Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + C (C is a complex), with the pixel value is modulo 256, and a maximum of inf_n iterations is performed.  C is varied over the image between the boundaries given.  The format of the image is in jpg format.
 
