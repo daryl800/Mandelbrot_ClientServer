@@ -37,10 +37,14 @@ This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the wor
 Note: Execute the server side program before executing the programing on the client side.
 
 ### Output 
-<img src="https://github.com/daryl800/Mandelbrot_ClientServer/blob/master/FullMandelbrotImage.jpg" style="float: left" width="200" height="200" />
+<img src="https://github.com/daryl800/Mandelbrot_ClientServer/blob/master/FullMandelbrotImage.jpg" style="float: left" width="250" height="250" />
 
 # Open Source & Copying
 Mandelbrot_ClientServer is for free and provide its entire source code for free as well. In the spirit of openness, Mandelbrot_ClientServer is licensed under MIT so that you can use the code in your app, if you choose.
 
 However, please do not ship this app under your own account!!!
+
+### Reference
+(1) Mandelbrot_ClientServer Class diagrams.pdf
+(2) Mandelbrot_ClientServer workflow and architecture.pdf
 
