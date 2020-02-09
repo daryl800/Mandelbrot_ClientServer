@@ -1,11 +1,8 @@
 # Mandelbrot_ClientServer
 
-### ToDoList gives you opportunities to keep track of your tasks.  Basic functionalites includes 
-1.  Show the entire task list.
-2.  Add new task.
-3.  Assign a project to the task.
-4.  Edit/Update task (i.e. change task status)
-5.  Save task(s) and exit.
+### This project has two applications:  Server part and client part, which together renders parts of the Mandelbort set.  
+1.  Server application accepts requests on a TCP port.
+2.  Client application spreads the workload over a set of severs.
 
 # Getting Started
 
