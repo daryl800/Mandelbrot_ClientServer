@@ -7,18 +7,19 @@
 # Getting Started
 
 ### &nbsp;&nbsp;&nbsp; Prerequisites
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java runtime environment (ideally latest version) is needed.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java runtime environment.
 
 ### &nbsp;&nbsp;&nbsp; Setup & Installation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All *.class files should be placed in the same directory.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to the java/classs files, there additional files must exist (or created) in the same working diretory, namely:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Put all sever side files in the same folder on the server side. Compile all files with "javac *.java" and execute the main program by executing "Java MandelbrotServer"
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. users.csv contains username and password and must be setup and edited by the adminstrator before executing the program.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull all client side files int eh same folder on the client side.  Compile all files with "javac I.java" and execute the main program by executing the ClientMain in the form like: mi_c_re min_c_im max_c_re max_c_im max_n x y divisions list-of servers
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. projects.csv contains project details.  Projects details must be edited accroding to the format specified in the first comment line (preceed by a # sign).  The idea is that this projects.csv file will be replaced a by database.
+Example:  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:1234 localhost:1234 localhost:3456
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. taskObject.txt contains the detailed information of the tasks in the object form.  This file will be automatically created by the program and should never be editied or removed.
+This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output from the client will display on the screen and a copy of the image "FullMandelbrotImage.jpg" will be stored in the execution folder.
+
 
 ### &nbsp;&nbsp;&nbsp; Execution 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;javac Run
