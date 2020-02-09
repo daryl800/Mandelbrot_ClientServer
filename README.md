@@ -3,7 +3,7 @@
 ### This project has two applications:  Server part and client part, together they renders the Mandelbort set image.  
 1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
 The server accpts a request that hass this form:  
-** _min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n_**
+_**min_c_re,min_c_im,max_c_re,max_c_im max_n,x,y,inf_n**_
 
 2.  Client application divides the Mandelbrot image generation requests and spreads the workload over a set of severs.
 
