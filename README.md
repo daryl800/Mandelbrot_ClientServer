@@ -28,7 +28,7 @@ Put all client side files int a folder on the client side.  Compile all files wi
 
 Server side:  run the main program by excuting the command "Java MandelbrotServer" in the  *.class file folder.
 
-Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this:  _**ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division <list of hosts:port>.**_
+Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this:  _**ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division list_of_hosts:port.**_
 
   - _**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
 
