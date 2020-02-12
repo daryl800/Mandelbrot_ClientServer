@@ -10,7 +10,7 @@ The server accepts a request that has this form:
 
     - The server is capable of handleing multiple call.  And it is psssible to speicfy which port the server listens to.
 
-2.  Client application divides the task into multiple requests and spreads the workload over a set of severs.  Afterwards, it merges the sub-pictures returned from the servers, shows it on screen and saves the image in jpg format into a local folder.  
+2.  Client application divides the image rendering task into multiple tasks and spreads the workload over a set of severs.  When all sub-pictures returned from the servers, they will be merged and shown on the screen, a copy of the image will also be stored in a local folder in jpg format under the name "FullMandelbrotImage.jpg".  
 
 # Getting Started
 
