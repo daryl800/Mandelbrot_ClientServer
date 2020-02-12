@@ -20,9 +20,9 @@ java runtime environment.
 ### Setup & Installation
 All *.class files should be placed in the same directory.
 
-Put all server side files in the a folder on the server side. Compile all files with "javac *.java" command.  Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the MandelbrotServer main functiopn and recompile the files.
+Put all server side files in a folder on the server side. Compile all files with "javac *.java" command.  Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the source code of MandelbrotServer main functiopn, it just requires a complilation to make the new setting effective.
 
-Put all client side files int a folder on the client side.  Compile all files with "javac *.java" command and ions list-of servers.**
+Put all client side files in a folder on the client side.  Compile all files with "javac *.java" command and ions list-of servers.**
 
 ### Execution 
 
@@ -32,9 +32,9 @@ Client side:  run the main program by executing the coammand "java ClientMain" i
 
   - _**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
 
-This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output image client will be displayed on client screen and a copy of the image file "FullMandelbrotImage.jpg" will be stored in the client side folder.
+This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output image will be displayed on client screen and a copy of the image is saved in "FullMandelbrotImage.jpg" in the client side folder.
 
-Note: Execute the server side program before executing the programing on the client side.
+Note: Run the server side program before running the program on the client side.
 
 ### Output 
 <img src="https://github.com/daryl800/Mandelbrot_ClientServer/blob/master/FullMandelbrotImage.jpg" style="float: left" width="250" height="250" />
