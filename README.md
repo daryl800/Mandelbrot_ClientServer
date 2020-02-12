@@ -8,7 +8,7 @@ The server accepts a request that has this form:
 
     - In return, it returns a gray-scale image of dimesion x times y, where each pxel corresponds to the number of iterations it takes, until |Z<sub>n</sub>| > C, Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + C (C is a complex), with the pixel value is modulo 256, and a maximum of inf_n iterations is performed.  C is varied over the image between the boundaries given.  The format of the image is in jpg format.
 
-    - The server is capable of handleing multiple call.  And it is psssible to speicfy which port the server listens to.
+    - The server is capable of handling multiple calls.  And it is psssible to speicfy which port the server listens to.
 
 2.  Client application divides the image rendering task into multiple tasks and spreads the workload over a set of severs.  When all sub-pictures returned from the servers, they will be merged and shown on the screen, a copy of the image will also be stored in a local folder in jpg format under the name "FullMandelbrotImage.jpg".  
 
