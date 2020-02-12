@@ -1,7 +1,7 @@
 # Mandelbrot_ClientServer
 
 ### This project has two applications:  Server part and client part, together they renders the Mandelbort set image.  
-1.  Server application accepts requests on a TCP port and generate the requested part of the Mandelbrot image
+1.  Server application accepts requests on a TCP port and generates the requested image (part of the Mandelbrot image).
 The server accepts a request that has this form:  
 
     - _**min_c_re, min_c_im, max_c_re, max_c_im, max_n, x, y, inf_n**_
