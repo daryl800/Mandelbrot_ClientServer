@@ -20,17 +20,21 @@ java runtime environment.
 ### Setup & Installation
 All *.class files should be placed in the same directory.
 
-Put all server side files in a folder on the server side. Compile all files with "javac *.java" command.  Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the source code of MandelbrotServer main functiopn, it just requires a complilation to make the new setting effective.
+Put all server side files in a folder on the server side. Compile all files with "javac *.java" command.  
+    javac -d . *.java
+Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the source code of MandelbrotServer main functiopn, it just requires a complilation to make the new setting effective.
 
 Put all client side files in a folder on the client side.  Compile all files with "javac *.java" command and ions list-of servers.**
+    javac -d . *.java
 
 ### Execution 
 
 Server side:  run the main program by excuting the command "Java MandelbrotServer" in the  *.class file folder.
+    java Server.MandelbrotServer
 
 Client side:  run the main program by executing the coammand "java ClientMain" int the java in *.class with the form like this:  _**ClientMain min_c_re min_c_im max_c_re max_c_im max_n x y division hosts:port ... (list of hosts).**_
 
-  - _**E.g. :  -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
+  - _**E.g. :  Client.Main -1 -1.5 2 1.5 1024 10000 10000 4 localhost:111 192.168.1.123:1234 192.168.1.222:3456**_
 
 This should divide the 10000x1000 picture in 4x4 sub-pitures, and spread the work to the three given servers.  The output image will be displayed on client screen and a copy of the image is saved in "FullMandelbrotImage.jpg" in the client side folder.
 
