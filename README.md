@@ -21,10 +21,13 @@ java runtime environment.
 All *.class files should be placed in the same directory.
 
 Put all server side files in a folder on the server side. Compile all files with "javac *.java" command.  
+
     javac -d . *.java
+    
 Note that the TCPIP port number is fixed as "5056".  However, it can be changed by modifying the port number in the source code of MandelbrotServer main functiopn, it just requires a complilation to make the new setting effective.
 
 Put all client side files in a folder on the client side.  Compile all files with "javac *.java" command and ions list-of servers.**
+
     javac -d . *.java
 
 ### Execution 
